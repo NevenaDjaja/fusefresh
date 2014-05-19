@@ -4,5 +4,62 @@
 @import "bootstrap";
 
 body {
-	font-family: Verdana, Helvetica; 
+/*	font-family: 'Josefin Sans', sans-serif;
+*/	
+	font-family: 'Flamenco', cursive;
+	font-weight: 600;
+	font-size: 1.6em;
+}
+.container {
+	margin: 0 auto;
+}
+.navbar-default {
+	margin: 0 auto 20px auto;
+	max-width: 942px;
+}
+.main-content {
+	margin: 0 auto;
+	max-width: 940px;
+}
+
+.raw-navigation {
+	background-color: #54A782;
+}
+.raw-navigation .navbar-header a {
+	color: #FF9966;
+	font-size: 1.3em;
+	font-weight: 700;
+}
+
+.raw-navigation .navbar-header a:hover {
+	color: #FFCC99;
+}
+
+.raw-navigation .raw-list > li > a {
+	color: #fff;
+}
+
+.raw-navigation .navbar-header .icon-bar {
+	background-color: #fff;
+}
+
+.raw-list {
+	font-size: 18px;
+}
+
+.grid1of3, .grid2of3, .grid3of3 {
+	padding: 0;
+	padding-right: 20px;
+}
+.main {
+	margin: 0 auto;
+}
+
+.main-grid {
+	max-width: 940px;
+	overflow: hidden;
+}
+
+.main-img {
+	margin-bottom: 20px;
 }
