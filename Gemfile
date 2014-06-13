@@ -29,10 +29,14 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'bootstrap-sass', '3.1.1.0'
 
+gem 'rake', '10.3.1'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'awesome_print', :group => :development
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'

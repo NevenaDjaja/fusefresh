@@ -24,27 +24,32 @@ body {
 
 .raw-navigation {
 	background-color: #54A782;
-}
-.raw-navigation .navbar-header a {
-	color: #FF9966;
-	font-size: 1.3em;
-	font-weight: 700;
-}
 
-.raw-navigation .navbar-header a:hover {
-	color: #FFCC99;
-}
+	.navbar-header .icon-bar {
+		background-color: #fff;
+	}
 
-.raw-navigation .raw-list > li > a {
-	color: #fff;
-}
+	.raw-list {
+		float: right;
+		font-size: 18px;
 
-.raw-navigation .navbar-header .icon-bar {
-	background-color: #fff;
-}
+		> li > a {
+			color: #fff;
+			&:hover {
+				color: #FFCC99;
+			}
+		}
+	}
+	.navbar-header a {
+		color: #FF9966;
+		font-size: 1.3em;
+		font-weight: 700;
 
-.raw-list {
-	font-size: 18px;
+		&:hover {
+			color: #FFCC99;	
+		}
+	}
+	
 }
 
 .grid1of3, .grid2of3, .grid3of3 {
