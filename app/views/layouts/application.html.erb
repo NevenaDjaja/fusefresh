@@ -18,13 +18,13 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Rawfusion</a>
+            <%= link_to "Rawfusion", root_path, class: "navbar-brand" %>
           </div>
           <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav raw-list">
               <li><a href="#">smoothies</a></li>
               <li><a href="#">salads</a></li>
-              <li><a href="#">cookies</a></li>
+              <li><%= link_to "sweets", sweets_path, class: "" %><li>
               <li><a href="#">stews</a></li>
               <li><a href="#">light meals</a></li>
             </ul>

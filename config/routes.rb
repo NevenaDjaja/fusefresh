@@ -1,5 +1,8 @@
 Rawfusion::Application.routes.draw do
-  match '/' => 'main#index', :via => [:get]
+  root 'main#index'
+  match '/', to: 'main#index', via: 'get'
+  match '/sweets', to: 'main#view', via: 'get' 
+  match '/details', to: 'main#details_view', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
