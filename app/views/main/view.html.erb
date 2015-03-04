@@ -1,24 +1,30 @@
 <div class="main-content">
 
-<div>TEST</div>
 <div class="col-6 col-sm-6 col-lg-4 img1of3">
-	<%= link_to "#{image_tag('granola1.jpg')}".html_safe, details_path  %>
+	<%= link_to "#{image_tag('amaranth1.jpg')}".html_safe, details_path  %>
 </div>
 <div class="col-6 col-sm-6 col-lg-4 img1of3">
-	<%= image_tag "granola1.jpg" %>
+	<%= image_tag "amaranth1.jpg" %>
 </div>
 <div class="col-6 col-sm-6 col-lg-4 img1of3">
-	<%= image_tag "granola1.jpg" %>
+	<%= image_tag "amaranth1.jpg" %>
 </div>
 <div class="col-6 col-sm-6 col-lg-4 img1of3">
-	<%= image_tag "granola1.jpg" %>
+	<%= image_tag "amaranth1.jpg" %>
 </div>
 <div class="col-6 col-sm-6 col-lg-4 img1of3">
-	<%= image_tag "granola1.jpg" %>
+	<%= image_tag "amaranth1.jpg" %>
 </div>
 <div class="col-6 col-sm-6 col-lg-4 img1of3">
-	<%= image_tag "granola1.jpg" %>
+	<%= image_tag "amaranth1.jpg" %>
+</div>
 </div>
 
+<% if (session[:user_id]) %>
+	<div class="admin-section">
+		<h3>ADMIN STUFF</h3>
+		<%= link_to "Add recipe", details_path, :class => "btn btn-default btn-lg admin-pg-btn" %>
+		<%= link_to "Log out", logout_path, :class => "logout btn btn-default btn-lg admin-pg-btn" %>
+	</div>
+<% end %>
 
-</div>
