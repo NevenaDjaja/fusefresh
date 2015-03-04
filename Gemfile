@@ -7,7 +7,6 @@ gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '3.1.1.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'rspec-rails', '~> 3.0.2'
 gem 'rake', '10.3.1'
 gem 'jquery-rails'
 
@@ -23,10 +22,19 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+group :development, :test do
+	gem 'capybara', '~> 2.4.0'
+	gem 'factory_girl_rails', '~> 4.4.0'
+	gem 'rspec-rails', '~> 3.0.2'
+end
+
 gem 'awesome_print', :group => :development
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.1.2'
+gem 'bcrypt-ruby', '~> 3.1.2'
+#gem 'bcrypt-ruby', '~> 3.0.0'
+
+gem 'protected_attributes'
 
 
 # Use debugger

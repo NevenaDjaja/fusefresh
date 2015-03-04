@@ -1,8 +1,20 @@
 Rawfusion::Application.routes.draw do
-  root 'main#index'
-  match '/', to: 'main#index', via: 'get'
+  root 'pages#home' 
+
   match '/sweets', to: 'main#view', via: 'get' 
   match '/details', to: 'main#details_view', via: 'get'
+
+  get 'login', to: 'sessions#new', as: 'login'
+  get 'logout', to: 'sessions#destroy', as: 'logout'
+
+  # resources :users
+  resources :sessions
+
+  namespace :admin do
+    get '', to: 'dashboard#index', as: '/'
+    # resources :users
+    resources :recipes
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
