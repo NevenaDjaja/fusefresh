@@ -8,6 +8,6 @@
 
 User.find_or_create_by_email(
   email: 'fusefreshme@gmail.com',
-  password: 'nemamsifru',
-  password_confirmation: 'nemamsifru'
+  password: '',
+  password_confirmation: ''
 )
